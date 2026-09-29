@@ -1,0 +1,30 @@
+
+
+name: Primeirp CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+jobs:
+  validacao:
+  #maquina virtual
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: fazendo o gitclone 
+      - uses: actions/checkout@v4
+
+      
+      - name: Listando o diretorio para ver os arquivos
+        run: ls-l
+
+        
+      - name: deixando uma mensagem 
+        run: echo " está funionando o CI" 
+
+        
+          echo Add other actions to build,
+          echo test, and deploy your project.
