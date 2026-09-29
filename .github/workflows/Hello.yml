@@ -1,6 +1,4 @@
-
-
-name: Primeirp CI
+name: Primeiro CI
 
 on:
   push:
@@ -19,7 +17,7 @@ jobs:
 
       
       - name: Listando o diretorio para ver os arquivos
-        run: ls-l
+        run: ls -l
 
         
       - name: deixando uma mensagem 
@@ -28,3 +26,5 @@ jobs:
         
           echo Add other actions to build,
           echo test, and deploy your project.
+
+          
