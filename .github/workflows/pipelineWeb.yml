@@ -24,7 +24,7 @@ concurrency:
       - name: Visualizar os arquivos
       run: ls -l
 
-    deploy:
+    Deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
