@@ -14,17 +14,17 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-jobs:
+  jobs:
 
-  Validar:
-    runs-on: ubuntu-latest
-  steps:
-    - name: Fazer o gitclone
-      user: actions/checkout@v4
-    - name: Visualizar os arquivos
-    run: ls -l
+    Validar:
+      runs-on: ubuntu-latest
+    steps:
+      - name: Fazer o gitclone
+        user: actions/checkout@v4
+      - name: Visualizar os arquivos
+      run: ls -l
 
-deploy:
+    deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
